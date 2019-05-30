@@ -2,17 +2,20 @@ package edu.cnm.deepdive;
 
 public abstract class Canis {
 
-  public static final  int NUMBER_OF_LEGS = 4;
+  public static final int NUMBER_OF_LEGS = 4;
 
-  private static int instancerCount = 0;
+  private static int instanceCount = 0;
 
   public Canis() {
-    instancerCount++;
+    instanceCount++;
   }
 
   public abstract void hunt();
 
-  public static int getInstancerCount() {
-    return instancerCount;
+  public abstract void speak();
+
+  public static int getInstanceCount() {
+    return instanceCount;
   }
+
 }
